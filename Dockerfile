@@ -14,8 +14,8 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     net-tools \
     nmap \
-	openssh-client \
-	libpq-dev \
+    openssh-client \
+    libpq-dev \
     build-essential \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
@@ -23,13 +23,13 @@ RUN apt-get update && apt-get install -y \
 # Install home assistant dependencies
 RUN pip3 install \
     netdisco \
-	psutil \
-	speedtest-cli \
-	python-mpd2 \
-	python-nmap \
-	fritzconnection \
-	psycopg2 \
-	sqlalchemy
+    psutil \
+    speedtest-cli \
+    python-mpd2 \
+    python-nmap \
+    fritzconnection \
+    psycopg2 \
+    sqlalchemy
 
 # Install home assistant
 RUN pip3 install homeassistant==0.35.3
