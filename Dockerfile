@@ -32,7 +32,7 @@ RUN pip3 install \
     sqlalchemy
 
 # Install home assistant
-RUN pip3 install homeassistant==0.48.1
+RUN pip3 install homeassistant==0.49.1
 
 WORKDIR /data
 
